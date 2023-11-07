@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNI - Comercial - Cadastrar Cliente</title>
 </head>
@@ -28,8 +28,48 @@
 	</div>
 
 	<div class="eachItem">
+		<div class="desc">Seções da Home</div>
+		<img class="eachImg" src="./imagens/tecnico-ordem-digital/1home.png">
+		<h3>Tarefas para Hoje</h3>
+		<p class="p">Esta seção mostrará todas as atividades que estão agendadas para este dia.
+Estas atividades se atualizarão à meia-noite da data correspondente.</p>
+		<h3>Tarefas Pendentes</h3>
+		<p class="p">Esta seção enumerará todas as atividades passadas (de dias anteriores) que
+não foram completadas.</p>
+		<h3>Serviços sem Programação</h3>
+		<p class="p">Esta seção mostrará uma lista de todas as contas (ID de Serviço) que têm
+serviços, mas que ainda não foram agendadas. (Visto pelo Franqueado,
+Administrador, Pessoal de Vendas e Gerentes).</p>
+		<h3>Serviços que Expiram</h3>
+		<p class="p">Esta seção enumerará todas as contas (ID de Serviço) cujos contratos
+terminarão em 30 dias ou menos.</p>
+		<h3>Calendário</h3>
+		<p class="p">Esta seção lhe permitirá ver o que está agendado para esse mes. Todas as
+atividades e compromissos aparecerão aqui. Se o dia estiver em: 
+<div class="red">VERMELHO</div>significa que há algo agendado para a data. 
+Se o dia estiver em: <div class="black">PRETO</div> significa que não há nada agendado para essa data.</p>
+		<h3>Gerar Relatório Diario </h3>
+		<p class="p">Esta seção lhe permitirá ver um relatório das atividades de ontem, de hoje e
+de amanhã (enumeradas na sequência) para os funcionários selecionados.
+<ul>
+
+<li> Tarefas</li>
+<li> Propostas com Aceitação Pendente</li>
+<li> Propostas entregues ontem, hoje, e a serem entregues amanhã.</li>
+</ul></p>
+		<h3>Ícone de Telefone</h3>
+		<p class="p">Este ícone lhe enviará à Clientes Temp (Temporários). Aqui se pode
+completar a informação sobre um contato que poderia ser um cliente
+potencial, mas que não temos muita informação para continuar.</p>
+		<h3>Icone de Carro</h3>
+		<p class="p">Informação de Varrido relacionado aos Clientes Temp (Temporários).</p>
+		<h3>Icone de Envelope</h3>
+		<p class="p">Mensagens automáticas geradas pelo sistema com relação aos Clientes
+Temp (Temporários).</p>
+	</div>
+	<div class="eachItem">
 		<div class="desc">.</div>
-		<img class="eachImg" src="./imagens/tecnico-relatorio-supervisao/1.png">
+		<img class="eachImg" src="./imagens/tecnico-ordem-digital/1.png">
 	</div>
 
     </div>
@@ -131,7 +171,7 @@
     }
     .eachItem {
 	border-top: 1px solid grey;
-	height: 470px;
+	min-height: 470px;
 	width: 100%;
         display: flex;
         justify-content: center;
@@ -153,6 +193,27 @@
     }
     .atv {
     	background-color: red;
+    }
+    .p {
+    	font-size: 14px;
+	margin-top: -15px;
+	display: flex;
+	flex-direction: left;
+	width: 100%;
+	margin-left: 10px;
+    }
+    h3 {
+	margin-top: 1px;
+	background: rgba(0,0,0,.1);
+	width: 100%;
+	padding: 3px;
+    }
+    .red {
+    	color: red;
+	font-weight: bold;
+    }
+    .black {
+	font-weight: bold;
     }
 </style>
 
